@@ -1,0 +1,73 @@
+///////////////////////////////////////////////////////////////
+// Table of Contents
+//
+////////////////////////////////////////////////////////////////
+//
+// 0. Global
+// 1. Login
+//
+//
+////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////
+//
+//  0.Global
+//
+////////////////////////////////////////////////////////////////
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+////////////////////////////////////////////////////////////////
+//
+//  1.Login
+//
+////////////////////////////////////////////////////////////////
+
+
+.Login, .Register{
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images.unsplash.com/photo-1444090542259-0af8fa96557e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80") no-repeat center fixed; 
+  position: relative;
+  .LoginCard{
+    opacity: 0.95;
+    border-radius: 10px;
+    width:80vw; 
+    top:10vh;
+    position:absolute;
+    left:10vw
+  }
+}
+.Home{
+    
+  background-color:grey;
+  height: 100vh;
+  width: 100vw;
+  .Courses{
+  margin-top: 1vh;
+  display: grid;
+  
+}
+}
+
+.CourseCard{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  text-decoration: 'none';
+}
